@@ -9,7 +9,7 @@
         private float price;
 
         //Costruttore
-        public Product(string nameProduct, string descriptionProduct, int barCode, bool onSale )
+        public Product(string nameProduct, string descriptionProduct, bool onSale, float price )
         { 
         
         this.nameProduct = nameProduct;
@@ -41,7 +41,12 @@
         {
             get { return this.barCode; }
         }
-
+        //prezzo prodotto
+        public float Price
+        {
+            get { return (float)this.price; }
+            set { this.price = (float)value; }
+        }
 
         //saldo prodotto 
         //getters
