@@ -46,7 +46,7 @@ namespace CSharp_Composizione_Shop
         }
 
         //metodi
-
+       
         public void AddProduct(Product newProduct)
         {
             ProductList.Add(newProduct);
