@@ -60,24 +60,21 @@ namespace CSharp_Composizione_Shop
 
         public void addProductList(List<Product> listAddProduct)
         {
-            /*
-            List<Attore> nuovaListaDiAttori = (List<Attore>)attori.Concat(listaDiAttoriDaAggiungere);
-            this.attori = nuovaListaDiAttori;
-            */
+            
 
-            foreach (Product nuovoAttoreDaAggiungere in listAddProduct)
+            foreach (Product productaddnew in listAddProduct)
             {
-                this.ProductList.Add(nuovoAttoreDaAggiungere);
+                this.ProductList.Add(productaddnew);
             }
 
         }
 
         public string strRappresetation()
         {
-            string rapprString = "Titolo: " + this.shopName + "\n";
-            rapprString += "Anno: " + this.shopCity + "\n";
-            rapprString += "Genere: " + this.shopAddress + "\n";
-            rapprString += "Attori: \n";
+            string rapprString = "shop name: " + this.shopName + "\n";
+            rapprString += "shop city: " + this.shopCity + "\n";
+            rapprString += "shop address: " + this.shopAddress + "\n";
+            rapprString += "product: \n";
 
             foreach (Product productScan in ProductList)
             {
